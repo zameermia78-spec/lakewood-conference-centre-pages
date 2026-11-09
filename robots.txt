@@ -1,5 +1,5 @@
+
 User-agent: *
 Allow: /
 
-# Replace the placeholder with the final deployed sitemap URL before publishing.
-Sitemap: https://YOUR-DEPLOYED-DOMAIN/sitemap.xml
+Sitemap: https://zameermia78-spec.github.io/lakewood-conference-centre-pages/sitemap.xml
