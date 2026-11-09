@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover Lakewood Conference Centre in Johannesburg South for conferences, weddings, meetings and private celebrations. Explore venues and send an event enquiry.">
+  <meta name="keywords" content="Lakewood Conference Centre, conference venue Johannesburg South, wedding venue Johannesburg, event venue Gauteng, meeting venue Johannesburg South">
+  <meta name="author" content="Lakewood Conference Centre website project">
+  <meta name="robots" content="index, follow">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Lakewood Conference Centre | Johannesburg South">
+  <meta property="og:description" content="A versatile conference and events destination in Johannesburg South.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1200&q=80">
+  <!-- Update og:url and canonical to the final deployed URL before publishing. -->
+  <meta property="og:url" content="https://YOUR-DEPLOYED-DOMAIN/">
+  <link rel="canonical" href="https://YOUR-DEPLOYED-DOMAIN/">
+  <meta name="theme-color" content="#18221f">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+  <title>Lakewood Conference Centre | Johannesburg South</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin="" defer></script>
+</head>
+<body>
+  <header class="site-header" id="top">
+    <div class="container nav-wrap">
+      <a class="logo" href="#top" aria-label="Lakewood Conference Centre home">
+        <span class="logo-mark">L</span>
+        <span><strong>LAKEWOOD</strong><small>CONFERENCE CENTRE</small></span>
+      </a>
+
+      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-controls="mainNav" aria-expanded="false">☰</button>
+
+      <nav class="nav" id="mainNav" aria-label="Main navigation">
+        <a href="#about">About</a>
+        <a href="#venues">Venues</a>
+        <a href="#facilities">Facilities</a>
+        <a href="#packages">Packages</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#faq">FAQs</a>
+        <a href="#contact" class="nav-cta">Make an Enquiry</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-label="Lakewood Conference Centre introduction">
+      <picture class="hero-media">
+        <source media="(max-width: 600px)" srcset="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=900&q=75">
+        <source media="(max-width: 1200px)" srcset="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1400&q=80">
+        <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=2000&q=85" alt="Modern conference venue interior">
+      </picture>
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <p class="eyebrow">JOHANNESBURG SOUTH</p>
+        <h1>Where memorable<br><em>events</em> come together.</h1>
+        <p class="hero-text">A versatile conference and events destination for business gatherings, weddings, celebrations and private occasions.</p>
+        <div class="hero-actions">
+          <a href="#venues" class="btn btn-primary">Explore Our Venues</a>
+          <a href="#contact" class="btn btn-light">Request a Quote</a>
+        </div>
+      </div>
+      <div class="hero-scroll">SCROLL TO EXPLORE <span>↓</span></div>
+    </section>
+
+    <section class="intro section" id="about">
+      <div class="container two-col">
+        <div>
+          <p class="eyebrow dark">WELCOME TO LAKEWOOD</p>
+          <h2>A space for every<br><em>occasion.</em></h2>
+        </div>
+        <div class="intro-copy">
+          <p>The Lakewood Hotel & Conference Centre is located at 2 Vinton Road in Ormonde, Johannesburg South. Its event spaces support corporate meetings, conferences, weddings and special gatherings, with flexible catering options and an equipped kitchen.</p>
+          <p>The venue welcomes outside caterers and describes itself as strictly Halaal. Guests can also explore the hotel and on-site facilities as part of their event planning.</p>
+          <a href="#contact" class="text-link">Plan your event <span>→</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats" aria-label="Event types">
+      <div class="container stats-grid">
+        <div><strong>01</strong><span>Conferences</span></div>
+        <div><strong>02</strong><span>Weddings</span></div>
+        <div><strong>03</strong><span>Meetings</span></div>
+        <div><strong>04</strong><span>Private Events</span></div>
+      </div>
+    </section>
+
+    <section class="venues section" id="venues">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow dark">OUR SPACES</p>
+            <h2>Venues designed<br><em>around you.</em></h2>
+          </div>
+          <p>Choose a setting that fits the scale, style and purpose of your event. Our venue team can help you find the right configuration.</p>
+        </div>
+
+        <div class="venue-grid">
+          <article class="venue-card">
+            <picture class="card-image">
+              <source media="(max-width: 600px)" srcset="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=800&q=75">
+              <source media="(max-width: 1100px)" srcset="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1000&q=80">
+              <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?auto=format&fit=crop&w=1400&q=85" alt="Conference and meeting space">
+            </picture>
+            <div class="venue-info">
+              <span class="tag">BUSINESS</span>
+              <h3>Conference & Meeting Spaces</h3>
+              <p>Professional spaces for conferences, presentations, workshops and meetings.</p>
+              <a href="#contact">Enquire about this space →</a>
+            </div>
+          </article>
+
+          <article class="venue-card featured-card">
+            <picture class="card-image">
+              <source media="(max-width: 600px)" srcset="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=800&q=75">
+              <source media="(max-width: 1100px)" srcset="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=1000&q=80">
+              <img src="https://images.unsplash.com/photo-1519167758481-83f550bb49b3?auto=format&fit=crop&w=1400&q=85" alt="Elegant event and wedding venue">
+            </picture>
+            <div class="venue-info">
+              <span class="tag">CELEBRATIONS</span>
+              <h3>Wedding & Celebration Spaces</h3>
+              <p>Elegant, adaptable spaces for weddings, parties and special occasions.</p>
+              <a href="#contact">Enquire about this space →</a>
+            </div>
+          </article>
+
+          <article class="venue-card">
+            <picture class="card-image">
+              <source media="(max-width: 600px)" srcset="https://images.unsplash.com/photo-1507504031003-b417219a0fde?auto=format&fit=crop&w=800&q=75">
+              <source media="(max-width: 1100px)" srcset="https://images.unsplash.com/photo-1507504031003-b417219a0fde?auto=format&fit=crop&w=1000&q=80">
+              <img src="https://images.unsplash.com/photo-1507504031003-b417219a0fde?auto=format&fit=crop&w=1400&q=85" alt="Private event dining space">
+            </picture>
+            <div class="venue-info">
+              <span class="tag">PRIVATE EVENTS</span>
+              <h3>Private Function Spaces</h3>
+              <p>Comfortable settings for intimate functions, dinners and private gatherings.</p>
+              <a href="#contact">Enquire about this space →</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="facilities section" id="facilities">
+      <div class="container facilities-layout">
+        <picture class="facility-photo">
+          <source media="(max-width: 600px)" srcset="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=800&q=75">
+          <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1400&q=85" alt="Professional Lakewood facility interior">
+        </picture>
+        <div class="facility-content">
+          <p class="eyebrow dark">MORE THAN A VENUE</p>
+          <h2>Everything you need,<br><em>in one place.</em></h2>
+          <p>Lakewood combines event spaces with convenient on-site facilities, helping make your event simpler for both hosts and guests.</p>
+          <div class="facility-list">
+            <div><span>01</span><div><h4>Flexible Event Spaces</h4><p>From larger function spaces to more intimate boardroom-style meetings.</p></div></div>
+            <div><span>02</span><div><h4>Catering Flexibility</h4><p>Outside caterers are welcome, with access to an equipped kitchen.</p></div></div>
+            <div><span>03</span><div><h4>Strictly Halaal Venue</h4><p>Lakewood identifies its venue as strictly Halaal.</p></div></div>
+            <div><span>04</span><div><h4>Hotel & On-site Facilities</h4><p>Accommodation and additional hospitality facilities are available on site.</p></div></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="packages section" id="packages">
+      <div class="container">
+        <div class="center-heading">
+          <p class="eyebrow dark">EVENT OPTIONS</p>
+          <h2>Packages made<br><em>simple.</em></h2>
+          <p>Tell us what you're planning and we'll help shape the right package for your event, guest count and requirements.</p>
+        </div>
+        <div class="package-grid">
+          <div class="package"><span>01</span><h3>Corporate</h3><p>Conferences, meetings, workshops and business events.</p><a href="#contact">Get a quote →</a></div>
+          <div class="package"><span>02</span><h3>Weddings</h3><p>A memorable setting for your ceremony, reception and celebration.</p><a href="#contact">Get a quote →</a></div>
+          <div class="package"><span>03</span><h3>Private Events</h3><p>Flexible options for parties, dinners and special gatherings.</p><a href="#contact">Get a quote →</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery section" id="gallery">
+      <div class="container">
+        <div class="section-heading">
+          <div><p class="eyebrow dark">THE LAKEWOOD EXPERIENCE</p><h2>See the <em>space.</em></h2></div>
+          <p>Explore event inspiration by category. Search the gallery or choose a filter, then open any image for a closer look.</p>
+        </div>
+        <div class="gallery-tools" aria-label="Gallery controls">
+          <div class="gallery-filters" role="group" aria-label="Filter gallery by category">
+            <button class="filter-button active" type="button" data-filter="all" aria-pressed="true">All images</button>
+            <button class="filter-button" type="button" data-filter="conference" aria-pressed="false">Conferences</button>
+            <button class="filter-button" type="button" data-filter="wedding" aria-pressed="false">Weddings</button>
+            <button class="filter-button" type="button" data-filter="celebration" aria-pressed="false">Celebrations</button>
+            <button class="filter-button" type="button" data-filter="dining" aria-pressed="false">Dining & spaces</button>
+          </div>
+          <label class="gallery-search-label" for="gallerySearch">Search images</label>
+          <input id="gallerySearch" class="gallery-search" type="search" placeholder="Search conferences, weddings..." autocomplete="off">
+        </div>
+        <p class="gallery-result-count" id="galleryResultCount" aria-live="polite">Loading gallery…</p>
+        <div class="gallery-grid gallery-grid-dynamic" id="galleryGrid" aria-live="polite"></div>
+        <p class="gallery-empty" id="galleryEmpty" hidden>No images match your search. Try another word or category.</p>
+      </div>
+    </section>
+
+    <section class="faq section" id="faq">
+      <div class="container faq-layout">
+        <div><p class="eyebrow dark">GOOD TO KNOW</p><h2>Frequently asked<br><em>questions.</em></h2><p class="faq-intro">A few helpful answers before you plan your visit or event.</p></div>
+        <div class="faq-list" id="faqList">
+          <details class="faq-item"><summary>What types of events can I enquire about?</summary><p>You can enquire about conferences, business meetings, weddings, private functions and other celebrations. Share your event details so the team can advise on suitable options.</p></details>
+          <details class="faq-item"><summary>Can I request a quotation?</summary><p>Yes. Use the event enquiry form and include your preferred date, guest count and requirements. The form prepares an enquiry summary for you to review.</p></details>
+          <details class="faq-item"><summary>Is accommodation available?</summary><p>Lakewood has hotel accommodation information associated with the venue. Include accommodation needs in your enquiry so availability can be confirmed directly.</p></details>
+          <details class="faq-item"><summary>How do I confirm availability?</summary><p>Submit an enquiry with your preferred date and event details. A date is not confirmed until the venue team responds directly.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta">
+      <div class="container cta-inner">
+        <p class="eyebrow">READY TO START PLANNING?</p>
+        <h2>Let's make your event<br><em>one to remember.</em></h2>
+        <a href="#contact" class="btn btn-light">Make an Enquiry</a>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="container contact-grid">
+        <div class="contact-copy">
+          <p class="eyebrow dark">PLAN YOUR EVENT</p>
+          <h2>Tell us about<br><em>your event.</em></h2>
+          <p class="contact-intro">Use the event enquiry form to share the details needed for a venue response. You will receive an on-screen summary before you finish.</p>
+          <div class="contact-details">
+            <div><span>ADDRESS</span><p>2 Vinton Road, Ormonde, Johannesburg South, 2091</p></div>
+            <div><span>TELEPHONE</span><p><a href="tel:+27101011786">010 10 11 786</a> · <a href="tel:+27762021450">076 202 1450</a></p></div>
+            <div><span>EMAIL</span><p><a href="mailto:info@thelakewood.co.za">info@thelakewood.co.za</a></p></div>
+          </div>
+        </div>
+
+        <div class="enquiry-panel">
+          <h3>Event enquiry</h3>
+          <p class="form-intro">Tell us what you are planning. Fields marked * are required.</p>
+          <form class="enquiry-form" id="enquiryForm" novalidate>
+            <div class="form-row">
+              <label>Full name *<input type="text" name="name" autocomplete="name" placeholder="Your full name" required minlength="2"></label>
+              <label>Contact number *<input type="tel" name="phone" autocomplete="tel" placeholder="e.g. 082 123 4567" required pattern="[0-9+()\s-]{7,20}"></label>
+            </div>
+            <div class="form-row">
+              <label>Email address *<input type="email" name="email" autocomplete="email" placeholder="you@example.com" required></label>
+              <label>Event type *<select name="eventType" required><option value="">Choose an event</option><option>Conference</option><option>Business meeting</option><option>Wedding</option><option>Private function</option><option>Birthday celebration</option><option>Other</option></select></label>
+            </div>
+            <div class="form-row">
+              <label>Preferred date *<input type="date" name="eventDate" id="eventDate" required></label>
+              <label>Estimated guests *<input type="number" name="guests" min="1" max="5000" step="1" placeholder="e.g. 100" required></label>
+            </div>
+            <label>Venue setup preference<select name="setup"><option value="Not sure yet">Not sure yet</option><option>Theatre / presentation</option><option>Boardroom</option><option>Banquet / round tables</option><option>Classroom</option><option>Cocktail / standing</option></select></label>
+            <label>Event requirements<textarea name="message" rows="4" placeholder="Tell us about catering, accommodation, equipment or any other requirements."></textarea></label>
+            <button class="btn btn-dark" type="submit">Prepare enquiry summary <span>→</span></button>
+            <p class="form-note">This demonstration validates and processes your details in the browser. It does not submit to a live booking system or confirm availability.</p>
+            <p class="form-error" id="enquiryError" role="alert" hidden></p>
+          </form>
+          <section class="enquiry-summary" id="enquirySummary" aria-live="polite" hidden>
+            <h3>Your enquiry summary</h3>
+            <p>Review the details below. You can print or save this summary for your records.</p>
+            <dl id="summaryDetails"></dl>
+            <div class="summary-actions"><button class="btn btn-dark" id="printSummary" type="button">Print summary</button><button class="btn btn-outline" id="editEnquiry" type="button">Edit details</button></div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-methods section" id="contact-message">
+      <div class="container contact-methods-grid">
+        <div><p class="eyebrow dark">GENERAL QUESTIONS</p><h2>Contact the<br><em>Lakewood team.</em></h2><p>For a general message that is not an event enquiry, use this separate contact form. It validates your details and prepares an email in your default email application.</p></div>
+        <form class="contact-form" id="contactForm" novalidate>
+          <label>Your name *<input type="text" name="contactName" autocomplete="name" required minlength="2"></label>
+          <label>Your email *<input type="email" name="contactEmail" autocomplete="email" required></label>
+          <label>Subject *<input type="text" name="subject" required minlength="3"></label>
+          <label>Message *<textarea name="contactMessage" rows="5" required minlength="10"></textarea></label>
+          <button class="btn btn-dark" type="submit">Prepare email <span>→</span></button>
+          <p class="form-note">Your default email app will open with the message prepared. Add the venue's confirmed email address before live deployment.</p>
+          <p class="form-error" id="contactError" role="alert" hidden></p>
+          <p class="success-message" id="contactSuccess" role="status" hidden>Email draft prepared. If your email application did not open, check your browser's mail settings.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="map-section section" id="location">
+      <div class="container">
+        <div class="section-heading"><div><p class="eyebrow dark">FIND US</p><h2>Johannesburg <em>South.</em></h2></div><p>The map is centred on the published Lakewood address at 2 Vinton Road, Ormonde. Use the external directions link to confirm the route before travelling.</p></div>
+        <p class="map-fallback" id="mapFallback" hidden>Interactive map is unavailable right now. Open the location in <a href="https://www.openstreetmap.org/search?query=2%20Vinton%20Road%2C%20Ormonde%2C%20Johannesburg" target="_blank" rel="noopener">OpenStreetMap</a>.</p>
+        <div id="lakewoodMap" class="lakewood-map" role="application" aria-label="Interactive map showing the general Johannesburg South area"></div>
+        <p class="map-note"><a href="https://www.google.com/maps/search/?api=1&query=2+Vinton+Road+Ormonde+Johannesburg+2091" target="_blank" rel="noopener">Open directions to 2 Vinton Road in Google Maps</a>. The map marker is based on a third-party location listing; confirm the exact entrance with the venue.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container footer-grid">
+      <div><a class="logo footer-logo" href="#top"><span class="logo-mark">L</span><span><strong>LAKEWOOD</strong><small>CONFERENCE CENTRE</small></span></a><p>A versatile event destination in Johannesburg South.</p></div>
+      <div><h4>Explore</h4><a href="#about">About</a><a href="#venues">Venues</a><a href="#facilities">Facilities</a><a href="#gallery">Gallery</a></div>
+      <div><h4>Events</h4><a href="#packages">Conferences</a><a href="#packages">Weddings</a><a href="#packages">Meetings</a><a href="#packages">Private Events</a></div>
+      <div><h4>Enquiries</h4><a href="#contact">Request a Quote</a><a href="#contact">Check Availability</a><a href="#contact">Contact the Team</a></div>
+    </div>
+    <div class="container footer-bottom"><span>© 2026 Lakewood Conference Centre. Website development project.</span><a href="#contact-message">General contact</a><a href="#top">Back to top ↑</a></div>
+  </footer>
+
+  <script src="script.js" defer></script>
+  <noscript><p class="noscript-note">JavaScript is required for the gallery filters, lightbox, map and interactive forms.</p></noscript>
+</body>
+</html>
